@@ -17,9 +17,9 @@ structure out of the box
 
 ## To deploy:
 
-You can deploy this however you want, but I've added a nixpacks-config to make
+You can deploy this however you want, but I've added a nixpacks config to make
 it easy to use [railway.app](https://railway.app?referralCode=HvmU0L) (referral
-link), or easily deploy it manually as a container using nixpacks.
+link), or easily deploy it manually as a container using [nixpacks](https://nixpacks.com/docs/getting-started).
 
 ## File structure:
 
