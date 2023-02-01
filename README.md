@@ -12,7 +12,7 @@ structure out of the box
 1. Create repo based on template, clone it and install packages with `yarn` (to
    use another package manager, remove `yarn.lock` and update the scripts
    section of `package.json` )
-1. Copy `.env.example` to `.env` and populate it
+1. Copy `.env.example` to `.env` and populate it with your bot token
 1. Run the bot using `yarn start`
 
 ## To deploy:
