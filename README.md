@@ -19,7 +19,7 @@ structure out of the box
 
 You can deploy this however you want, but I've added a nixpacks-config to make
 it easy to use [railway.app](https://railway.app?referralCode=HvmU0L) (referral
-link)
+link), or easily deploy it manually as a container using nixpacks.
 
 ## File structure:
 
