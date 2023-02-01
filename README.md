@@ -3,7 +3,7 @@
 Template repo: https://github.com/alvesvaren/discord-ts-template
 
 This is a simple template to create discord bots with typescript and slash
-commands. Mostly based on the official docs, but has some extra features and
+commands using discord.js. Mostly based on the official docs, but has some extra features and
 structure out of the box
 
 ## To use:
