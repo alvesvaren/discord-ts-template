@@ -12,18 +12,21 @@ import { fileURLToPath } from 'url';
 import { Command } from './types';
 
 const client = new Client({ intents: [GatewayIntentBits.Guilds] });
-
-const filePath = fileURLToPath(import.meta.url);
 const commands: Record<string, Command> = {};
+
+// Find all command files
+const filePath = fileURLToPath(import.meta.url);
 const commandsPath = path.join(path.dirname(filePath), 'commands');
 const commandFiles = await fs.readdir(commandsPath);
 
+// Dynamically import all command files and add them to commands
 for (const file of commandFiles) {
   const filePath = path.join(commandsPath, file);
   const command: Command = await import(filePath);
   commands[command.command.name] = command;
 }
 
+// This runs whenever a slash command for this bot is ran
 const handleSlashCommand = async (
   client: Client,
   interaction: CommandInteraction,
@@ -55,9 +58,7 @@ client.on(Events.InteractionCreate, async interaction => {
   // Only handle slash commands by default
   if (!(interaction.isCommand() || interaction.isContextMenuCommand())) return;
   console.log(
-    `Command: ${interaction.commandName} (${interaction.user.tag}, ${
-      interaction.user.id
-    })
+    `Command: ${interaction.commandName} (${interaction.user.tag})
     - args: {${interaction.options.data
       .map(o => `${o.name}: ${JSON.stringify(o.value)}`)
       .join(', ')}}`,
