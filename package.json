@@ -13,7 +13,7 @@
     "dotenv": "^16.0.3",
     "erlpack": "discord/erlpack",
     "utf-8-validate": "^6.0.2",
-    "zlib-sync": "^0.1.7"
+    "zlib-sync": "^0.1.8"
   },
   "devDependencies": {
     "@swc/core": "^1.3.24",
