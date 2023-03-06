@@ -12,7 +12,7 @@
     "discord.js": "^14.7.1",
     "dotenv": "^16.0.3",
     "erlpack": "discord/erlpack",
-    "utf-8-validate": "^6.0.2",
+    "utf-8-validate": "^6.0.3",
     "zlib-sync": "^0.1.8"
   },
   "devDependencies": {
